@@ -253,7 +253,8 @@ header {
   justify-content: space-around;
   align-items: center;
   max-width: 1400px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 header .nav {
   display: flex;
@@ -282,7 +283,8 @@ section {
   justify-content: space-around;
   align-items: center;
   max-width: 1400px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   height: 90vh;
 }
 
@@ -304,10 +306,6 @@ section {
   background-image: url("../src/explore.png");
 }
 
-.together {
-  height: fit-content;
-}
-
 #guide-img {
   width: 687px;
   height: 654px;
@@ -317,14 +315,25 @@ section {
   background-image: url("../src/guides.png");
 }
 
-#testimonials {
-  padding-left: 15rem;
+.d-bottom-margin {
+  margin-top: 200px;
+  height: fit-content;
+  margin-bottom: -150px;
+  justify-content: space-between;
+  max-width: 1000px;
 }
 
 footer {
   height: 482px;
   background-color: #dddee1;
-  margin-top: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=output.css.map */
