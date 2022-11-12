@@ -1,0 +1,276 @@
+// Global style
+
+$primary-color: #fb8f1d;
+
+@use "functions";
+@use "sass:math";
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 19px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 17px;
+  font-weight: 300;
+  color: #7d7987;
+}
+
+p {
+  font-size: 15px;
+  color: #7d7987;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.btn-main {
+  @include functions.btn($clr: white, $bg: #fb8f1d);
+}
+
+.btn-sec {
+  @include functions.btn();
+}
+
+.btn-link {
+  font-weight: 700;
+  color: $primary-color;
+}
+
+select {
+  border: 1px solid #afb0b9;
+  font-size: 15px;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-weight: 300;
+}
+
+.txt-sc {
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+  h6 {
+    width: 40ch;
+    line-height: 1.5rem;
+    display: block;
+    margin-bottom: 3rem;
+  }
+}
+
+.card {
+  width: 261px;
+  height: 337px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  div {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: white;
+    width: 120px;
+    height: 56px;
+    border-top-right-radius: 8px;
+  }
+}
+
+#img1 {
+  @include functions.background($imgpath: img1);
+}
+#img2 {
+  @include functions.background($imgpath: img2);
+}
+#img3 {
+  @include functions.background($imgpath: img3);
+}
+#img4 {
+  @include functions.background($imgpath: img4);
+}
+
+.blog {
+  width: 266px;
+  div {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 266px;
+    height: 230px;
+  }
+  h4 {
+    line-height: 1.5rem;
+  }
+  p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+#blog1 {
+  @include functions.background($imgpath: blog1);
+}
+#blog2 {
+  @include functions.background($imgpath: blog2);
+}
+#blog3 {
+  @include functions.background($imgpath: blog3);
+}
+#blog4 {
+  @include functions.background($imgpath: blog4);
+}
+
+.finder {
+  .line {
+    border-bottom: 1px solid #7d7987;
+    padding-bottom: 20px;
+    border-bottom-width: 3px;
+    width: 50px;
+  }
+  div {
+    margin: 1rem 0;
+    display: block;
+  }
+}
+
+.rvw-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include functions.background($imgpath: rvw);
+  border-radius: 20px;
+  width: 416px;
+  height: 522px;
+  position: relative;
+  div {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: white;
+    width: 120px;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border-top-left-radius: 8px;
+  }
+  span {
+    border: 1px solid #7d7987;
+    padding: 10px;
+    border-radius: 100%;
+    color: #7d7987;
+  }
+}
+
+.rvw {
+  div {
+    margin-bottom: 1.5rem;
+  }
+  span {
+    color: #ffbb0c;
+  }
+  .quote {
+    font-size: 24px;
+    font-weight: 300;
+    width: 40ch;
+  }
+
+  h5 {
+    font-weight: 300;
+  }
+}
+
+header {
+  height: 120px;
+  @include functions.flex;
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    place-items: center;
+  }
+
+  li {
+    list-style: none;
+    display: inline;
+    margin: 0 1rem;
+    color: #7d7987;
+    &:first-child {
+      color: black;
+    }
+  }
+
+  img {
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+section {
+  @include functions.flex;
+  height: 90vh;
+}
+
+#hero-img {
+  width: 687px;
+  height: 654px;
+  @include functions.background($imgpath: hero);
+}
+
+#explore-img {
+  width: 687px;
+  height: 654px;
+  @include functions.background($imgpath: explore);
+}
+
+.together {
+  height: fit-content;
+}
+
+#guide-img {
+  width: 687px;
+  height: 654px;
+  @include functions.background($imgpath: guides);
+}
+
+#testimonials {
+  padding-left: 15rem;
+}
+
+footer {
+    height: 482px;
+    background-color: #dddee1;
+    margin-top: 300px;
+}

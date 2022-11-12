@@ -1,0 +1,25 @@
+@mixin btn($clr: #fb8f1d, $bg: white) {
+  border: 1px solid #fb8f1d;
+  color: $clr;
+  font-size: 15px;
+  background: $bg;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 300;
+}
+
+@mixin background($imgpath) {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../src/" + $imgpath + ".png");
+}
+
+@mixin flex() {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
