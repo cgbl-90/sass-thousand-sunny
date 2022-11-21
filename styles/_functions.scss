@@ -8,10 +8,10 @@
   font-weight: 300;
 }
 
-@mixin background($imgpath) {
+@mixin background($imgpath, $conf: cover) {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: $conf;
   background-image: url("../src/" + $imgpath + ".png");
 }
 
@@ -20,7 +20,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }

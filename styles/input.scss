@@ -94,7 +94,7 @@ select {
 }
 
 .card {
-  width: 261px;
+  width: 220px;
   height: 337px;
   background-position: center;
   background-repeat: no-repeat;
@@ -125,11 +125,11 @@ select {
 }
 
 .blog {
-  width: 266px;
+  width: 220px;
   div {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 266px;
+    width: 220px;
     height: 230px;
   }
   h4 {
@@ -247,21 +247,21 @@ section {
 }
 
 #hero-img {
-  width: 687px;
-  height: 654px;
-  @include functions.background($imgpath: hero);
+  width: 587px;
+  height: 554px;
+  @include functions.background($imgpath: hero, $conf: contain);
 }
 
 #explore-img {
-  width: 687px;
-  height: 654px;
-  @include functions.background($imgpath: explore);
+  width: 587px;
+  height: 554px;
+  @include functions.background($imgpath: explore, $conf: contain);
 }
 
 #guide-img {
-  width: 687px;
-  height: 654px;
-  @include functions.background($imgpath: guides);
+  width: 587px;
+  height: 554px;
+  @include functions.background($imgpath: guides, $conf: contain);
 }
 
 .d-bottom-margin {

@@ -276,7 +276,11 @@ header li:first-child {
   color: black;
 }
 header img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -320,6 +324,8 @@ section {
 
 .d-bottom-margin {
   margin-top: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   margin-bottom: -150px;
   justify-content: space-between;
@@ -347,6 +353,4 @@ footer li {
 }
 footer li:first-child {
   font-weight: 500;
-}
-
-/*# sourceMappingURL=output.css.map */
+}/*# sourceMappingURL=input.css.map */
